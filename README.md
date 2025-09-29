@@ -8,7 +8,7 @@
 
  Golang(参考:It_is_Mygo)(几乎停滞)
 
- C\C++（参考：HelloC）
+ C\C++（参考：HelloC
  
 ~~Jvav~~ Java(参考：Java_Project)
 

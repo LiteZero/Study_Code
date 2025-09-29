@@ -7,5 +7,86 @@
 </head>
 <body>
     <!-- 表格与excel很像，用于展示数据 -->
+    <table border="1" ><!-- border表示边框线多少 -->
+        <!-- thead表示表格的头部 -->
+        <thead>
+            <tr><!-- tr指表格的行，从上往下 -->
+                <th>姓名</th><!-- th表示首行表头 与td比较会加粗且居中-->
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        <!-- tbody表示表格的主体 -->
+        <tbody>
+            <tr>
+                <td>张三</td><!-- td表示普通单元格-->
+                <td>81</td>
+                <td>90</td>
+                <td>171</td>
+            </tr>
+            <tr> 
+                <td>李四</td>
+                <td>92</td>
+                <td>88</td>
+                <td>180</td>
+            </tr>
+        </tbody>
+        <!-- tfoot表示表格的底部 -->
+        <tfoot>
+            <tr> 
+                <td>汇总</td>
+                <td>173</td>
+                <td>178</td>
+                <td>351</td>
+            </tr>
+        </tfoot>
+        <!-- thead\tbody和tfoot都是用于让网页表格更加结构化所设计的标签，实际上不会显示任何内容 -->
+    </table>
+    <br>
+    <br>
+
+        <!--下面是展示合并单元格的另一个表格 -->
+        <!-- 合并单元格的步骤：
+            1.确定要合并的单元格
+            2.在最左最上的单元格中添加属性：
+                rowspan(纵向合并)
+                colspan(横向合并)
+                并设置合并的数量
+            3.删除被合并的单元格 
+        -->
+    <table border="1" >
+        <!-- 合并标签不能够跨结构标签合并 -->
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>92</td>
+                <td rowspan="2">100</td><!--rowspan：和下方单元格合并，="2"中的"2"表示合并的行数 -->
+                <td>192</td>
+            </tr>
+            <tr> 
+                <td>李四</td>
+                <!-- 此处就不需再添加重复的单元格 -->
+                <td>92</td>
+                <td>192</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr> 
+                <td>汇总</td>
+                <td colspan="2">173</td><!--colspan: 和横向单元格合并 ="2"中的"2"表示合并的列数 -->
+                <!-- 此处就不需再添加重复的单元格 -->
+                <td>384</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>

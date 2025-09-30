@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-表单下拉菜单&文本域</title>
+</head>
+<body>
+    <!-- 4.1 下拉菜单 -->
+    <!-- 下拉菜单为嵌套式标签，select中嵌套option以表示各个可选项 -->
+    城市：
+    <select name="city">
+        <!-- select表示下拉菜单整体，name表示下拉菜单的名称 -->
+        <!-- option表示下拉菜单中的各个选项 -->
+        <option >北京</option>
+        <option >上海</option>
+        <option >广州</option>
+        <option selected>深圳</option><!-- selected表示默认选中的选项 -->
+        <option >杭州</option>
+    </select>
+    <!-- 4.2 文本域 -->
+    <br><br>
+    <!-- 文本域用于多行文本输入，标签为textarea -->
+     <!-- cols和rows都是尺寸控制，但一般使用css修改尺寸，无用 -->
+     <textarea cols="30" rows="5" placeholder="请输入内容"></textarea>
+     
+</body>
+</html>

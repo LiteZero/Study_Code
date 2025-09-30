@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-表单input&label标签</title>
+    <!-- 表单的关键词是input，可以指派多种类型，如下： -->
+</head>
+<body>
+    <!-- 3.1 text文本表单标签 -->
+    用户名：<input type="text" placeholder="请输入用户名">
+    <!-- 文本表单的特点是定义type为text，输入为单行明文 -->
+    <!-- 参数placeholder是在输入框内显示的提示信息 -->
+    <br><br>
+    <!-- 3.2 password密码表单标签 -->
+    密码：<input type="password" placeholder="请输入密码">
+    <!-- 密码表单的特点是定义type为password，输入为单行密文 -->
+    <!-- 参数placeholder是在输入框内显示的提示信息 -->
+    <br><br>
+    <!-- 3.3 radio单选表单标签 -->
+    性别：<input type="radio" name="gender" checked>男
+    <input type="radio" name="gender">女
+    <!-- 单选表单的特点是定义type为radio，name作为分组，一组中的单选框只能同时选中一个 -->
+    <!-- 参数checked表示默认选中 -->
+    <br><br>
+    <!-- 3.4 label组织标签 -->
+    <!-- label标签可以将表单元素和文本标签关联起来，点击文本标签可以选中对应的表单元素，通过此可优化用户体验 -->
+    <!-- 支持label标签增大点击范围的表单控件有很多:
+    有text\password\file\radio\textbox\select\textarea等 -->
+    性别(label优化)：
+    <!-- 写法一 -->
+    <label><input type="radio" name="gender1" checked>男</label>
+    <!-- 写法二 -->
+    <input type="radio" id="woman"name="gender1"><label for="woman">女</label>
+    <!-- 3.5 checkbox多选表单标签 -->
+    <br><br>
+    爱好：<input type="checkbox" name="hobby" checked>篮球
+    <input type="checkbox" name="hobby">足球
+    <input type="checkbox" name="hobby">羽毛球
+    <!-- 多选表单的特点是定义type为checkbox，name作为分组，一组中的多选框可以同时选中多个 -->
+    <!-- 参数checked表示默认选中 -->
+    <br><br>
+    <!-- 3.6 file上传文件表单标签 -->
+    文件：<input type="file" multiple>
+    <!-- 参数multiple表示可以选择多个文件进行上传 -->
+</body>
+</html>

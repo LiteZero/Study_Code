@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-表单区域与表单按钮</title>
+</head>
+<body>
+    <!-- 5.1 form表单区域标签 -->
+    <!-- form表单区域标签就好像是一个作用域,诸如重置按钮此类的功能仅在form的区域中能起到作用 -->
+    <!-- action是未来需要将数据发送过去的接收地址 -->
+    <form action="">
+    用户名：<input type="text" placeholder="请输入用户名">
+    <br><br>
+    密码：<input type="password" placeholder="请输入密码">
+    <br><br>
+    <!-- 5.2 表单按钮标签 -->
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    <button type="button">普通</button>
+    <!-- button的type有三种值:
+    submit:提交,点击后可以提交数据到后台,不声明type的默认状态
+    reset:重置,点击后可以重置表单中的所有输入为初始值
+    button:普通按钮,点击后不会有任何行为,需要通过js来绑定事件 -->
+    </form>
+</body>
+</html>

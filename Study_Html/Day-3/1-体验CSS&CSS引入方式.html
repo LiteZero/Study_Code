@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-体验CSS&CSS引入方式</title>
+    <!-- css通过<link>引入称为外部样式表-->
+    <link rel="stylesheet" href="./css/1-外部引入样式.css">
+    <!-- rel是关系属性，表示当前文档与被链接文档之间的关系，
+     stylesheet表明被链接文档是样式表 -->
+</head>
+<body>
+    <!-- css通过style标签载入到html中 这种引入方式称为内部样式表-->
+    <style>
+        p{
+            /* color为颜色键值，可以使用十六进制、RGB、RGBA等格式 */
+            color: #66ccff;
+            /* font-size为字体大小 */
+            font-size: 20px;
+            /* background-color为背景颜色 */
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+    <h1>外部样式表加载css</h1>
+    <p>内部样式表加载css</p>
+    <!--直接在标签中添加css，称为行内样式-->
+    <div style="color: #ff6600; font-size: 15px; background-color: rgba(0, 0, 0, 0.1);">
+        行内样式加载css
+    </div>
+</body>
+</html>

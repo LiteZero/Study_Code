@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-综合案例2-注册信息</title>
+</head>
+<body>
+    <form action="">
+    <h1>注册信息</h1>
+    <h2>个人信息</h2>
+    姓名:<input type="text" placeholder="请输入真实姓名"><br><br>
+    密码:<input type="password" placeholder="请输入密码"><br><br>
+    确认密码:<input type="password" placeholder="请再次输入密码"><br><br>
+    性别:<label><input type="radio" name="xingbie" checked>男</label>
+         <label><input type="radio" name="xingbie">女</label><br><br>
+    居住城市：<select name="city">
+        <option >北京</option>
+        <option >上海</option>
+        <option >广州</option>
+        <option selected>深圳</option>
+        <option >杭州</option>
+        </select><br><br>
+    <h2>教育经历</h2>
+    最高学历：
+    <select name="xueli">
+        <option >小学</option>
+        <option >初中</option>
+        <option selected>高中</option>
+        <option >大专</option>
+        <option >本科</option>
+        <option >硕士</option>
+        <option >博士</option>
+    </select>
+    <br><br>
+    学校名称：<input type="text" placeholder="请输入学校名称"><br><br>
+    所学专业：<input type="text" placeholder="请输入所学专业"><br><br>
+    在校时间：
+    <select name="starttime">
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+    </select>
+        -
+    <select name="endtime">
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+    </select>
+    <h2>工作经历</h2>
+    公司名称：<input type="text" placeholder="请输入公司名称"><br><br>
+    工作描述：<textarea cols="30" rows="5" placeholder="请输入工作描述"></textarea><br><br>
+    <input type="checkbox" checked>我已阅读并同意以下条款:<br>
+    <ul>
+        <li><a href="#">牛马无偿工作条款</a>
+        <li><a href="#">隐私政策</a>
+    </ul>
+    <button type="submit">提交注册</button>
+    <button type="reset">重新填写</button>
+    </form>
+</body>
+</html>

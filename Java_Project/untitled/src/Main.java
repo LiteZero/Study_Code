@@ -1,9 +1,15 @@
-import java.io.PrintStream;
+import java.util.Scanner;
 
-//TIP 要<b>运行</b>代码，请按 <shortcut actionId="Run"/> 或
-// 点击装订区域中的 <icon src="AllIcons.Actions.Execute"/> 图标。
 public class Main {
     public static void main(String[] args) {
-        PrintStream printf = System.out.printf("Hello and welcome!");
+        Scanner sc = new Scanner(System.in);
+        int[] a=new int[11];
+        int i,j,t;
+        for(i=0;i<10;i++){a[i]=sc.nextInt();}
+        int n=sc.nextInt();
+        for(i=0;i<10;i++){for(j=0;j<10;j++){if(a[i]<a[j]){t=a[i];a[i]=a[j];a[j]=t;}}}
+        for(i=9;i>n-1;i--){a[i+1]=a[i];}
+        a[n+1]=n;
+        for(i=0;i<11;i++){System.out.print(a[i]+" ");}
     }
 }

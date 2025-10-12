@@ -8,16 +8,16 @@
     <!-- 其作用主要是更准确、更高效的选择目标元素（标签） -->
 </head>
 <body>
-    <!-- 1.1 后代选择器 -->
-    <!-- 选中某元素的后代元素，即嵌套关系中的子孙元素 -->
-    <!-- 使用方法是：父选择器 子选择器{} 父子选择器，用空格间隔 -->
-    <style>div span{color: green;} div p span{color:skyblue;}</style>
-    <span>这是一个span标签</span>
-    <div><span>这是放在div中的span标签，他的颜色是绿的</span></div>
-    <div><p><span>这是放在p中的span标签，他的颜色是天蓝色的的</span></p>
-
     <!-- 1.2 子代选择器 -->
     <!-- 选中某元素的子元素，即嵌套关系中的子元素 -->
     <!-- 使用方法是：父选择器>子选择器{} 父子选择器，用大于号间隔 -->
+    <style>div span{color:rgb(144, 0, 255);} div>span{color:red;} </style>
+    <div>
+        <span>儿子span</span>
+        <!-- div>span在div span的后面，因此会覆盖前一种样式，故其会修改儿子span的样式 -->
+        <p>
+            <span>孙子span</span>
+            <!-- div span为后代选择器，选中了其中的两个span -->
+        </p>  
 </body>
 </html>

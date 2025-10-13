@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-CSS三大特性</title>
+    <!-- 三大特性分别是：继承性 层叠性和优先级 -->
+</head>
+<body>
+   <!-- /* 3.3 优先级*/
+        /* 某个标签使用多个选择器时，基于不同种类的选择器的匹配规则 */
+        /* 优先级越高，样式越优先，一般来说：*/
+        /* 通配符选择器（即*，参考Day-3 2.4，可选中所有元素）<标签选择器(即p{}此类)<类选择器（即.text1此类）
+        <id选择器（#example）<行内样式(在标签中定义样式)<含!important的样式*/ -->
+    <style>
+    /* 通配符选择器 */
+    *{font-size:15px;}
+    /* 标签选择器 */
+    p{color:red 
+        /* !important定义最高 */
+        !important;
+        font-size:20px;}
+    /* 类选择器 */
+    .text1{color:#66ccff;font-weight: bold;}
+    /* id选择器 */
+    #text2{font-weight:80;font-family: 'Times New Roman', Times, serif;}
+    </style>
+    <!-- 行内样式 -->
+    <p class="text1" id="text2" style="font-family: 'Courier New', Courier, monospace;">我是p标签</p>
+</body>
+</html>

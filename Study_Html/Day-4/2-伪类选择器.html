@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-伪类选择器</title>
+    <!-- 什么叫伪类选择器： -->
+    <!-- 表示元素状态，选中元素的某一个状态设置样式 -->
+    <!-- 比如鼠标放置于单行文字上，设置这个状态的样式 -->
+</head>
+<body>
+    <style>
+        /* 在此处设定颜色后，如果不额外设定下面的LVHA，会把四种状态均设为此处的颜色 */
+        a{color:black;}
+        /*可以使用的状态关键词：
+        1.超链接：
+        link 访问前
+        visited 访问后
+        hover 鼠标悬停
+        active 点击时
+        必须按照L V H A的顺序书写，否则会不生效
+         */
+        a:link{color:#66ccff;} 
+        a:hover{color:#7788ff;}
+        a:visited{color:#66ccff;}
+    </style>
+</body>
+<a href="#">这是一个超链接</a>
+</html>

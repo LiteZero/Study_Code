@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-CSS三大特性</title>
+    <!-- 三大特性分别是：继承性 层叠性和优先级 -->
+</head>
+<body>
+    
+    <style>
+        /* 3.2 层叠性*/
+        /* 相同的属性会覆盖：后面的CSS属性覆盖前面的CSS属性 */
+        /* 不同的属性会叠加：不同的CSS属性都生效 */
+        /* 比如下面的例子中color是相同的属性 而font-weight是不同的属性 */
+    p{color:red;font-size:20px;}
+    .text1{color:#66ccff;font-weight: bold;}
+    </style>
+    <p class="text1">我是p标签</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-复合选择器</title>
+    <!-- 复合选择器由多个基础的选择器通过不同方式组合而成 -->
+    <!-- 其作用主要是更准确、更高效的选择目标元素（标签） -->
+</head>
+<body>
+    <!-- 1.4 交集选择器 -->
+    <!-- 选中同时满足多个条件的元素 -->
+    <!-- 写法 选择器1选择器2选择器3 -->
+    <style>
+        .text1{color:red;}
+        p.text1{color:skyblue;}
+    </style>
+    <div class="text1">这是text1样式的span标签</div>
+    <p class="text1">这是text3样式的p标签</p>
+    <p>这是无格式p标签</p>
+</body>
+</html>

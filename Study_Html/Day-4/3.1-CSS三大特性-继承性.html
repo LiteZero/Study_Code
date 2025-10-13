@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-CSS三大特性</title>
+    <!-- 三大特性分别是：继承性 层叠性和优先级 -->
+</head>
+<body>
+    
+    <style>
+        /* 3.1 继承性*/
+        /*子级默认继承父级的文字控制属性 */
+        /* 比如此处我们设置body标签的样式，对于body下的所有标签 */
+        /* 这些效果都成立（除非标签的样式被单独设定）*/
+        /* 这种单独设定可以是我们手动设定的，比如下文中的span */
+        /* 也可以是自带的，比如a标签自带颜色+下划线 */
+        body{
+            font-size:36px;
+            color:#6c0b71;
+        }
+        span{
+            font-size:36px;
+            color:#137745;
+        }
+    </style>
+    <p>p标签</p>
+    <div>div标签</div>
+    <span>span标签</span><br>
+    <a href="#">a标签</a>
+</body>
+</html>

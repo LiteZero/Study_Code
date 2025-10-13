@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-CSS三大特性</title>
+    <!-- 三大特性分别是：继承性 层叠性和优先级 -->
+</head>
+<body>
+    <!-- 3.4 优先级-叠加计算规则 -->
+    <!-- 对于复合选择器，规则： -->
+    <!-- 按照此顺序进行对比： -->
+    <!-- 1.（行内样式、id选择器个数、类选择器个数、标签选择器个数） -->
+    <!-- 从左向右依次比较选个数，同一级个数多的优先级高，如果个数相同，则向后比较 -->
+    <!-- 2.!important 权重最高 -->
+    <!-- 3.继承权重最低 -->
+    <style>
+    .c1 .c2 div{color:blue;}/*0个行内样式 0个id选择器 2个类选择器 1个标签选择器  */
+    div #box{color:green;}/* 0 1 0 1 */
+    #box1 .c3{color:orange;}/* 0 1 1 0 */        
+    /* 即其中的第三条优先级最高 */
+    /* 继承怎么看：比如第一条里的 c1里找c2 c2里找div 正好符合*/
+    div p{color:red;}
+    .father{color:blue;}
+    </style>
+    <div id="box1" class="c1">
+        <div id="box2" class="c2">
+            <div id="box3" class="c3">
+                这行文本是什么颜色的？
+            </div>
+        </div>
+    </div>
+    <style>
+    div p{color:red;}/*第一个css明显不是继承*/
+    .father{color:blue;}/*father不直接与文字接壤 所以这里是继承*/
+    </style>
+    <div class="father">
+        <p class="son">
+        文字
+        </p>
+    <div>
+</body>
+</html>

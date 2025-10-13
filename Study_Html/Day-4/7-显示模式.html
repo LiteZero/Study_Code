@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-显示模式</title>
+</head>
+<body>
+    <style>
+        div{
+            background-color: pink;
+            display: inline;/* 也可以通过display进行显示模式转换 */
+            /* 可转换为:inline(行内元素) inline-block(行内块元素)和block(块级元素)*/
+        }
+        span{
+            background-color: #66ccff;
+        }
+        .mod1{
+            height: 40px;
+            width: 200px;
+        }
+    </style>
+    <!-- 显示模式分三类： -->
+
+    <!-- 块级元素 -->
+        <!-- 特点是:独占一行 宽度默认是父级的100% 添加宽高属性生效 -->
+        <!-- 比如div元素 -->
+         <div>我是正常的div</div>
+         <br>
+         <div class="mod1">我是被添加了宽高属性的div</div>
+    <!-- 行内元素 -->
+        <!-- 特点是:一行共存多个 尺寸由内容撑开 宽高属性不生效 -->
+        <!-- 比如span -->
+         <span>我是span</span>
+         <span>我是span</span>
+    <!-- 行内块元素 -->
+        <!-- 特点是: 一行共存多个 默认尺寸由内容撑开 添加宽高属性生效 -->
+        <!-- 比如img -->
+         <img src="../res/GuanLan.jpg" alt=""></img>
+         <img src="../res/GuanLan.jpg" alt=""></img>
+
+</body>
+</html>

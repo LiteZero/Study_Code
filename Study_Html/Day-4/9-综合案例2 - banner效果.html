@@ -5,40 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9-综合案例2 - banner效果</title>
     <style>
-        body{background-color: #f3f3f4;}
-        .title{
-            text-align: right;
-            height: 100px;
-            font-size: 36px;
-            color: #333333;
-        }
-        .pp{
-            text-align: right;
-            font-size: 20px;
-            color:#333333;
-        }
-        .picture{
-            background-repeat: no-repeat;
-            block-size: cover;
+        .bg{
+            background-color: #f3f3f4;
             height: 500px;
             background-image: url(../res/DAY4-ZHAL/background.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            text-align: right;
         }
-        a{
-            background-color: #fddb00;
-            color: #ffffff;
-            text-decoration: none;
-            font-style: 20px;
-            width: 125px;
-            height: 40px;
-        }
-        a:hover{background-color:#b17122;}
+    div h2{
+        color:#333333;
+        font-size: 36px;
+        line-height: 100px;
+        text-align: right;
+    }
+    div p{
+        font-size: 20px;
+        color: #333333;
+        text-align: right;
+    }
+    div a{
+        display: inline-block;
+        background-color: #f06b1f;
+        height: 40px;
+        width: 125px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    a:hover{
+        background-color: #66ccff;
+    }
     </style>
+
 </head>
 <body>
-    <div class="picture">
-    <div class="title">让创造产生价值</div>
-    <p class="pp">我们希望小游戏平台可以提供无限的可能性,让每一个创作者都可以将他们的才华和创意传递给用户</p>
-    <div style="text-align:right;"><a href="#">我要报名</a></div>
+    <div class="bg">
+        <h2>让创造产生价值</h2>
+        <p>我们希望小游戏平台可以提供无限的可能性，让每一个创作者都可以将他们的才华和创意传递给用户。</p>
+        <a href="#">我要报名</a>
     </div>
 </body>
 </html>

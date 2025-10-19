@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1-.结构伪类选择器</title>
+    <!-- 其实说白了结构伪类选择器就是寻找某个类型的第几个标签 -->
+    <!-- 可选的选择器分别有： -->
+    <!-- E:first-child 查找第一个E元素 -->
+    <!-- E:last-child 查找最后一个E元素 -->
+    <!-- E:nth-child 查找第N个E元素-->
+    <style>
+        p:first-child{
+            background-color:red;
+        }
+        p:nth-child(2){
+            /* 对于nth-child，后面的括号存在多个关系可供使用： */
+            /* 偶数标签：2n 奇数标签：2n+1/2n-1 找到5倍数的标签：5n*/ 
+            /* 找到第5个以后的标签：n+5，找到第五个以前的标签：-n+5*/ 
+            /* 注意：n从0开始计数 */
+           background-color:greenyellow;
+        }
+        p:last-child{
+            background-color:yellow;
+        }
+    </style>
 </head>
 <body>
-    
+    <p>这是第一个p元素</p>
+    <p>这是第二个p元素</p>
+    <p>这是第三个p元素</p>
+    <p>这是第四个p元素</p>
 </body>
 </html>

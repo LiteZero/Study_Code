@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-伪元素选择器</title>
+    <!-- 伪元素选择器用于创建虚拟元素（伪元素） -->
+    <!-- 通常用于摆放装饰性的内容 -->
+    <style>
+        /* 某个元素::before 在这个元素前添加伪元素 */
+        p::before{
+            /* 必须携带content 用于记录伪元素内的值 */
+            content:"I ";
+        }
+        /* 某个元素::after 在这个元素后添加伪元素 */
+        p::after{
+            content:" You So";
+        }
+    </style>
+</head>
+<body>
+    <p>Love</p>
+</body>
+</html>

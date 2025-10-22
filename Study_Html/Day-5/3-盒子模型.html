@@ -22,7 +22,7 @@
             /* 设置边框线 */
             /* 属性值分别是边框线粗细 线条样式 颜色（顺序没有讲究） */
             /* 常用的线条设置有三个，分别是soild（实线）、dashed（虚线）和dotted(点线) */
-            /* 上下左右都会出现 */
+            /* 如果不指派方位的话，上下左右都会出现 */
             border:3px dotted black;
 
             /* 设置外边距 */
@@ -32,7 +32,15 @@
             width:200px;
             height:100px;
             background-color:pink;
-            border:3px solid black;
+            /* 下面设置了不同的方位不同的类型边界线 */
+            /* 顶部 */
+            border-top:3px solid rgb(255, 191, 0);
+            /* 左边 */
+            border-left: 3px dashed #000;
+            /* 右边 */
+            border-right: 3px dotted #000;
+            /* 底部 */
+            border-bottom: 4px solid #000;
         }
     </style>
 </head>

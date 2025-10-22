@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-盒子模型</title>
+    <!-- 盒子模型本质上是为了更好地精确布局和设计网页元素 -->
+    <!-- 其中包含的主要有四部分： -->
+    <!-- 1.内部区域：width&height 前面专门学过这里不再提及 -->
+    <!-- 2.内边距：padding 用于设置内容与盒子边缘之间的距离 -->
+    <!-- 3.边框线：border  盒子描边 -->
+    <!-- 4.外边距：margin 盒子与盒子外间隔元素 -->
+    <style>
+        .style1{
+            width:200px;
+            height:100px;
+            background-color:pink;
+
+            /* 设置内边距 */
+            padding:20px;
+
+            /* 设置边框线 */
+            /* 属性值分别是边框线粗细 线条样式 颜色（顺序没有讲究） */
+            /* 常用的线条设置有三个，分别是soild（实线）、dashed（虚线）和dotted(点线) */
+            /* 上下左右都会出现 */
+            border:3px dotted black;
+
+            /* 设置外边距 */
+            margin:30px;
+        }
+        .style2{
+            width:200px;
+            height:100px;
+            background-color:pink;
+            border:3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="style1">这是一个盒子</div>
+    <div class="style2">这是一个盒子</div>
+</body>
+</html>

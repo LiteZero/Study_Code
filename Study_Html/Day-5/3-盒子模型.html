@@ -17,6 +17,7 @@
             background-color:pink;
 
             /* 设置内边距 */
+            /* 如果不指派方位的话，上下左右都会出现 */
             padding:20px;
 
             /* 设置边框线 */
@@ -32,6 +33,20 @@
             width:200px;
             height:100px;
             background-color:pink;
+            /* 下面设置了不同的方位的内边距 */
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 40px;
+            padding-bottom: 60px;
+            /* 除此之外，也可以使用复合写法，如下： */
+            padding: 10px 40px 60px 20px; /* 上 右 下 左 */
+            /* 顺时针转圈法记忆 */
+            /* 四个值：上 右 下 左 */
+            /* 三个值： 上 左右 下 */
+            /* 两个值：上下 左右 */
+
+
+
             /* 下面设置了不同的方位不同的类型边界线 */
             /* 顶部 */
             border-top:3px solid rgb(255, 191, 0);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-盒子模型-元素溢出</title>
+    <!-- 通过overflow控制溢出元素的内容显示方式 -->
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 2px solid #000;
+            margin: 20px;
+           
+        }
+        .style1{
+            overflow: hidden; /* 隐藏溢出内容 */
+            /* overflow: visible; 默认值，显示溢出内容（即使超出盒子） */
+        }
+        .style2{
+            overflow: scroll;  /* 同时始终显示两个滚动条 */
+        }
+        .style3{
+            overflow-x: hidden; /* 隐藏水平滚动条 */
+            overflow-y: auto; /* 根据需要显示垂直滚动条 */
+        }
+    </style>
+</head>
+<body>
+    <div class="style1">内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏</div>
+    <div class="style2">内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏</div>
+    <div class="style3">内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏内容超出盒子模型的部分将会被隐藏</div>
+
+</body>
+</html>

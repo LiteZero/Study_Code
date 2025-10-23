@@ -6,7 +6,7 @@
     <title>4-盒子模型-尺寸计算</title>
     <!-- 默认情况下，盒子尺寸 = 内容尺寸 + border(边框线)尺寸 + 内边距尺寸 -->
      <style>
-        div{
+        .style1{
             width: 200px;
             height: 100px;
             background-color: pink;
@@ -15,10 +15,33 @@
             /* 故盒子长度应该等于 200+3*2+20*2=266*/
             /* 故盒子高度应该等于 100+3*2+20*2=166 */
         }
-        /* 盒子模型的尺寸计算 */
+        /* 这会导致盒子变大 */
+        /* 如果需要解决这个问题，有两种解决方法： */
+        /* 1.手动做减法，减掉对应的border/padding尺寸 */
+        /* 比如这里把width的值设为200-3*2-20*2=154px height的值设为100-3*2-20*2=54px*/
+        .style2{
+            width: 154px;
+            height: 54px;
+            background-color: pink;
+            border: 3px solid #000;
+            padding: 20px;
+        }
+        /* 2.通过box-sizing:border-box内减模式 */
+        .style3{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            border: 3px solid #000;
+            padding: 20px;
+            box-sizing: border-box; /* 设置内减模式 */
+        }
      </style>
 </head>
 <body>
-    <div>测试用盒子</div>
+    <div class="style1">测试用盒子（被撑大）</div>
+    <br>
+    <div class="style2">测试用盒子</div>
+    <br>
+    <div class="style3">测试用盒子（内减）</div>
 </body>
 </html>

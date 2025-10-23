@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-版心居中</title>
+    <!-- 版心居中就是让一个盒子元素在网页尺寸不同的情况下能够始终保持居中 -->
+    <!-- 通过设置左右外边距为auto来实现，但需要定义宽度 -->
+    <style>
+        .container {
+            background-color: pink;
+            width: 80%; /* 定义宽度(80%是相对于整个页面的宽度) */
+            margin: 0 auto; /* 0是不需要设计的上下边距，设置左右外边距为auto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到我的网站</h1>
+        <p>这是一个简单的示例，展示了如何使用CSS实现版心居中。</p>
+    </div>
+</body>
+</html>

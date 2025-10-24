@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7-外边距问题-合并与塌陷</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid #000;
+            background-color: pink;
+        }
+        .style1{
+            margin-bottom: 20px;
+        }
+        .style2{
+            background-color: orange;
+            margin-top: 50px;
+        }
+        /* 在上面的两个style中，margin-bottom和margin-top的值分别为20px和50px */
+        /* 但是两个div之间的外边距只有50px */
+        /* 说明在两个兄弟元素盒子之间，所取的值是margin比较大的那个值，我们称之为外边距合并 */
+        .style3{
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+        }
+        .style4{
+           background-color: skyblue;
+           margin-top: 50px;
+        }
+    </style>
+    
 </head>
 <body>
-    
+    <div class="style1">第一个标签</div>
+    <div class="style2">第二个标签</div>
+    <br>
+    <div class="style3">
+        <div class="style4">第四个标签</div>
+    </div>
 </body>
 </html>

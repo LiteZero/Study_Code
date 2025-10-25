@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Zeros-Code-Space\\Study_Code\\C\\Project_temp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D526B82-F7CE-4752-BA6F-7886E672C872}|Project_temp.vcxproj|E:\\Zeros-Code-Space\\Study_Code\\C\\Project_temp\\Project_temp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6D526B82-F7CE-4752-BA6F-7886E672C872}|Project_temp.vcxproj|solutionrelative:Project_temp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Project_temp.cpp",
+              "DocumentMoniker": "E:\\Zeros-Code-Space\\Study_Code\\C\\Project_temp\\Project_temp.cpp",
+              "RelativeDocumentMoniker": "Project_temp.cpp",
+              "ToolTip": "E:\\Zeros-Code-Space\\Study_Code\\C\\Project_temp\\Project_temp.cpp",
+              "RelativeToolTip": "Project_temp.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-24T13:42:34.487Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

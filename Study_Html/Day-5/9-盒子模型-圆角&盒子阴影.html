@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-盒子模型-圆角&盒子阴影</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 80px;
+            background-color: #ffffff;
+            border: 4px solid orange;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 40px; /* 设置所有圆角的尺寸 */
+            /* border-radius也可以用复合写法 */
+            /* border-radius: 15px 30px 45px 60px; */
+            /* 分别代表左上角 右上角 右下角 左下角（顺时针） */
+            /* 如果只写了三个值，那依旧顺时针，多出的那个和对角线上一致 */
+            
+            box-sizing: border-box;
+            box-shadow: -2px 2px 15px 5px rgba(0, 0, 0, 0.5) inset; /* 设置盒子阴影 */
+            /* 值分别对应：X轴偏移量 Y轴偏移量 模糊半径 扩散半径 颜色 内外阴影 */
+            /* inset表示内阴影，默认是外阴影 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div> 
+</body>
+</html>

@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8-行内元素-内外边距问题</title>
+    <!-- 行内元素的外边距（margin）和内边距（padding）只会影响元素的水平位置 -->
+    <!-- 当我们为行内元素添加line-height属性时，就可以改变元素的垂直位置 -->
+     <style>
+     span{
+        background-color: pink;
+        margin: 50px;
+        padding: 20px;
+        /* 可以看到 当不设置line-height时，行内元素的垂直位置是无法改变的 */
+        /* 通过设置line-height属性，可以改变行内元素的垂直位置 */
+     }
+     .style1{
+        background-color: pink;
+        margin: 50px;
+        padding: 20px;
+        line-height: 100px;
+     }
+     </style>
 </head>
 <body>
-    
+    <span>这是一个不设置行高的段落</span>
+    <br><br>
+    <span class="style1">这是一个设置了行高的段落</span>
+    <!-- 可以看到，加了line-height后，垂直位置才发生了变化 -->
 </body>
 </html>

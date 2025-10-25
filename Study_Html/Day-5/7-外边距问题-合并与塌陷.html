@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-外边距问题-合并与塌陷</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+        .style1{
+            margin-bottom: 20px;
+        }
+        .style2{
+            background-color: orange;
+            margin-top: 50px;
+        }
+        /* 在上面的两个style中，margin-bottom和margin-top的值分别为20px和50px */
+        /* 但是两个div之间的外边距只有50px */
+        /* 说明在两个兄弟元素盒子之间，所取的值是margin比较大的那个值，我们称之为外边距合并 */
+        .parents{
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+        }
+        .child{
+           background-color: skyblue;
+           margin-top: 50px;
+        }
+        /* 在上面的两个style中，我们在child子标签当中设置了margin-top，在实际浏览器中*/
+        /* 我们可以发现，子标签的margin-top本意是拉开与父标签的距离，但父标签跟随了子标签下移 */
+        /* 这样的现象我们就称为塌陷现象 */
+        /* 修复方法有三种： */
+        /* 1. 取消子级的margin(外边距)，而使用父级的padding(内边距)拉开距离 */
+        /* 2. 给父级添加overflow:hidden; */
+        /* 4. 给父级设置border-top */
+        /* 通过取消下面方法的注释来体验修复方法的效果 */
+        /* 第一种解决方法 */
+        /* .child{
+            background-color: skyblue;
+            margin-top: 0;
+        }
+        .parents{
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+            padding-top: 50px;
+        }    
+        */
+
+        /* 第二种解决方法 */
+        /* .parents{
+            overflow:hidden;
+        } */
+
+        /* 第三种解决方法 */
+        /* .parents{
+            border-top: 1px solid transparent;
+        } */
+    </style>
+    
+</head>
+<body>
+    <div class="style1">第一个标签</div>
+    <div class="style2">第二个标签</div>
+    <br>
+    <div class="parents">
+        <div class="child">第四个标签</div>
+    </div>
+</body>
+</html>

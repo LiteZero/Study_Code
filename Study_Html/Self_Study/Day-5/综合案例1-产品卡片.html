@@ -4,16 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>综合案例1-产品卡片</title>
-    <!-- CSS书写顺序： -->
-    <!-- 1.盒子模型属性 -->
-    <!-- 2.文本样式 -->
-    <!-- 3.圆角、阴影等修饰属性 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: normal;
+        }
+        body{
+            background-color: #f1f1f1;
+        }
+        .card{
+            width: 270px;
+            height: 254px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin: 49px auto;
+            padding-top: 40px;
+            color: #333333;
+            box-shadow: #333333 0px 4px 16px 0px;
+        }
+        .card img{
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            /* margin-top: 80px; */
+        }
+        .card h4{
+            margin-top:26px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .card p{
+            text-align: center;
+            margin-top: 12px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <div class="first-card">
-        <div class="second-card">
-            <img src="..\res\DAY5-ZHAL1\SDK.png" alt="" width="50px" height="50px">
-        </div>
+    <div class="card">
+        <img src="../res/DAY5-ZHAL1/SDK.svg" alt=""></img>
+        <h4>抖音直播SDK</h4>
+        <p>包含抖音直播看播功能</p>
     </div>
 </body>
 </html>

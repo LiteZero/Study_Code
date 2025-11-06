@@ -8,11 +8,12 @@
 图形的规律是：第一行用 2025 重复填入，第二行开始，每行向左移动一个 字符，用 2025 重复填入。 
 给定 h, w ，请输出对应的图形。
 */
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 int main(){
     int a[4] = { 2, 0, 2, 5 };
     int h, w;
-    scanf("%d%d", &h, &w);
+    cin>>h>>w;
     for(int i=0;i<h;i++){
         for(int j=0;j<w;j++){
             int temp = (i+j)%4;
